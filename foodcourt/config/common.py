@@ -24,7 +24,8 @@ class Common(Configuration):
 
         # Your apps
         'foodcourt.users',
-
+        'foodcourt.posts',
+        'foodcourt.images',
     )
 
     # https://docs.djangoproject.com/en/2.0/topics/http/middleware/
