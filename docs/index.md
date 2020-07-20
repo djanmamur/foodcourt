@@ -10,6 +10,7 @@ Share and sell authentic food. Check out the project's [documentation](http://dj
 - [Docker](https://docs.docker.com/docker-for-mac/install/)
 - [Authentication](https://djanmamur.github.io/foodcourt/api/authentication)
 - [Users](https://djanmamur.github.io/foodcourt/api/users)
+- [Posts](https://djanmamur.github.io/foodcourt/api/posts)
 
 # Initialize the project
 
@@ -24,3 +25,13 @@ Create a superuser to login to the admin:
 ```bash
 docker-compose run --rm web ./manage.py createsuperuser
 ```
+
+There are 3 types of users
+```
+ADMIN = 1
+BUYER = 10
+SELLER = 20
+```
+Notes:
+##### Only admins or sellers can create a new Post
+##### Only the admins or the OWNER of a Post can modify or delete Posts
