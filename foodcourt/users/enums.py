@@ -8,4 +8,7 @@ class UserType(models.IntegerChoices):
 
     @classmethod
     def sellers(cls):
-        return [UserType.ADMIN, UserType.SELLER,]
+        return [
+            UserType.ADMIN,
+            UserType.SELLER,
+        ]

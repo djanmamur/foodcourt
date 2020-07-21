@@ -1,7 +1,8 @@
 from rest_framework.serializers import ModelSerializer, ValidationError
+
+from ..images.serializers import ImageSerializer
 from ..users.enums import UserType
 from .models import Post
-from ..images.serializers import ImageSerializer
 
 
 class PostSerializer(ModelSerializer):
@@ -9,7 +10,7 @@ class PostSerializer(ModelSerializer):
 
     class Meta:
         model = Post
-        fields = ('id', 'name', 'description', 'price', 'images')
+        fields = ("id", "name", "description", "price", "images")
 
 
 class CreatePostSerializer(ModelSerializer):
@@ -23,4 +24,10 @@ class CreatePostSerializer(ModelSerializer):
 
     class Meta:
         model = Post
-        fields = ('id', 'name', 'description', 'price', 'owner',)
+        fields = (
+            "id",
+            "name",
+            "description",
+            "price",
+            "owner",
+        )

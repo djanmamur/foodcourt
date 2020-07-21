@@ -36,3 +36,7 @@ django-storages==1.9.1
 boto3==1.14.4
 Pillow==7.2.0
 
+# Code format
+black==19.10b0
+isort==5.1.4
+pre-commit==2.6.0
