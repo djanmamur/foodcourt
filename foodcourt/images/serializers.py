@@ -6,4 +6,4 @@ from .models import Image
 class ImageSerializer(ModelSerializer):
     class Meta:
         model = Image
-        fields = ('url',)
+        fields = ("url",)

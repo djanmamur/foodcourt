@@ -15,7 +15,7 @@ class User(AbstractUser):
     user_type = models.IntegerField(choices=UserType.choices, default=UserType.BUYER)
     phone_number = models.CharField(max_length=15, null=False, blank=False, default="")
 
-    REQUIRED_FIELDS = ['phone_number']
+    REQUIRED_FIELDS = ["phone_number"]
 
     def __str__(self):
         return self.username
