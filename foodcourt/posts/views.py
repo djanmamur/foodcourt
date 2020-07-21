@@ -8,6 +8,7 @@ from .serializers import CreatePostSerializer, PostSerializer
 
 class PostViewSet(
     mixins.RetrieveModelMixin,
+    mixins.DestroyModelMixin,
     mixins.ListModelMixin,
     mixins.UpdateModelMixin,
     viewsets.GenericViewSet,

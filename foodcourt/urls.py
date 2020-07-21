@@ -14,9 +14,8 @@ router = DefaultRouter(trailing_slash=False)
 router.register(r"users", UserViewSet)
 router.register(r"users", UserCreateViewSet)
 
-router.register(r"posts/?", PostViewSet)
-router.register(r"posts/?", PostCreateViewSet)
-
+router.register(r"posts", PostViewSet)
+router.register(r"posts/", PostCreateViewSet)
 
 urlpatterns = [
     path("admin/", admin.site.urls),
