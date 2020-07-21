@@ -5,7 +5,7 @@ from ..permissions import IsUserOrReadOnly
 from .serializers import PostSerializer, CreatePostSerializer
 
 
-class PostViewSet(mixins.RetrieveModelMixin, mixins.UpdateModelMixin, viewsets.GenericViewSet):
+class PostViewSet(mixins.RetrieveModelMixin, mixins.ListModelMixin, mixins.UpdateModelMixin, viewsets.GenericViewSet):
     """
     Updates and retrieves user accounts
     """
